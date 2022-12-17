@@ -1,24 +1,22 @@
-import logo from './logo.svg';
+
+import { Container } from '@mui/system';
 import './App.css';
+import MenuAppBar from './components/Appbar';
+import Hero from './components/Hero';
+import UnderHero from './components/UnderHero';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Container>
+        <MenuAppBar />
+        <Hero />
+
+      </Container>
+      <UnderHero />
+
+
+    </>
   );
 }
 
